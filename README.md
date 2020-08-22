@@ -1,9 +1,13 @@
 # ECG-Arrhythmia-Classification-using-Artificial-Neural-Network
 
 # Dependency
+
 Numpy
+
 Matplotlib
+
 h5py
+
 Keras
 
 # Dataset
