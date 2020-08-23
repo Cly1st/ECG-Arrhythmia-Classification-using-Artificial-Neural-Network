@@ -8,7 +8,11 @@ Matplotlib
 
 h5py
 
-Keras
+Keras 2.4.3
+
+Sklearn 0.22.1 
+
+Tensorflow cpu 2.1.0
 
 # Dataset
 💾 The dataset was downloaded from kaggle website; which data store in csv file and annotation file in txt, not original format from physionet website.
