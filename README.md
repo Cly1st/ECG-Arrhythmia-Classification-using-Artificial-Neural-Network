@@ -16,7 +16,7 @@ Moreover, the AAMI Standard merged dataset from 15 classes into 5 classes contai
 
 ✨You can using the already split train dataset and testing dataset in hdf5 format. (You don't need to run the preprocessing code and download dataset).
 
-# Dependency
+# 📚Dependency
 
 Numpy
 
@@ -30,11 +30,11 @@ Sklearn 0.22.1
 
 Tensorflow cpu 2.1.0
 
-# Dataset
-💾 The dataset was downloaded from kaggle website; which data store in csv file and annotation file in txt, not original format from physionet website.
+# 💾Dataset
+The dataset was downloaded from kaggle website; which data store in csv file and annotation file in txt, not original format from physionet website.
 https://www.kaggle.com/taejoongyoon/mitbit-arrhythmia-database
 
-# Achknowledgement
+# 💌Achknowledgement
 
 https://www.kaggle.com/taejoongyoon/mitbit-arrhythmia-database 
 
