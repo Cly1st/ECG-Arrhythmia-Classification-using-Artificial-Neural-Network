@@ -35,8 +35,11 @@ The dataset was downloaded from kaggle website; which data store in csv file and
 https://www.kaggle.com/taejoongyoon/mitbit-arrhythmia-database
 
 # Training results
-<img src="https://github.com/Cly1st/ECG-Arrhythmia-Classification-using-Artificial-Neural-Network/blob/master/Images/Accuracy.png" width=350 height= 150>
+<img src="https://github.com/Cly1st/ECG-Arrhythmia-Classification-using-Artificial-Neural-Network/blob/master/Images/Accuracy.png" width=800 height= 600>
+<img src="https://github.com/Cly1st/ECG-Arrhythmia-Classification-using-Artificial-Neural-Network/blob/master/Images/Loss.png" width=800 height= 600>
+
 ![alt text](https://github.com/Cly1st/ECG-Arrhythmia-Classification-using-Artificial-Neural-Network/blob/master/Images/Accuracy.png)
+![alt text](https://github.com/Cly1st/ECG-Arrhythmia-Classification-using-Artificial-Neural-Network/blob/master/Images/Loss.png)
 
 # 💌Achknowledgement
 
