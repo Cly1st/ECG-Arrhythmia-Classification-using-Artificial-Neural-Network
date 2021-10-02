@@ -36,8 +36,7 @@ https://www.kaggle.com/taejoongyoon/mitbit-arrhythmia-database
 
 # Training results
 
-![alt text](/images/accuracy.png | width=700, height=450)
-![alt text](/images/loss.png | width=700, height=450)
+![alt text](https://github.com/Cly1st/ECG-Arrhythmia-Classification-using-Artificial-Neural-Network/Images/Accuracy.png)
 
 # 💌Achknowledgement
 
