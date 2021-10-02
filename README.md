@@ -34,6 +34,11 @@ Tensorflow cpu 2.1.0
 The dataset was downloaded from kaggle website; which data store in csv file and annotation file in txt, not original format from physionet website.
 https://www.kaggle.com/taejoongyoon/mitbit-arrhythmia-database
 
+# Training results
+
+![alt text](/images/accuracy.png | width=700, height=450)
+![alt text](/images/loss.png | width=700, height=450)
+
 # 💌Achknowledgement
 
 https://www.kaggle.com/taejoongyoon/mitbit-arrhythmia-database 
