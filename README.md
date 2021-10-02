@@ -36,10 +36,10 @@ https://www.kaggle.com/taejoongyoon/mitbit-arrhythmia-database
 
 # Training results
 <img src="https://github.com/Cly1st/ECG-Arrhythmia-Classification-using-Artificial-Neural-Network/blob/master/Images/Accuracy.png" width=500 height= 350>
-<img src="https://github.com/Cly1st/ECG-Arrhythmia-Classification-using-Artificial-Neural-Network/blob/master/Images/Loss.png" width=500 height= 350>
+<img src="https://github.com/Cly1st/ECG-Arrhythmia-Classification-using-Artificial-Neural-Network/blob/master/Images/Losses.png" width=500 height= 350>
 
-![alt text](https://github.com/Cly1st/ECG-Arrhythmia-Classification-using-Artificial-Neural-Network/blob/master/Images/Accuracy.png)
-![alt text](https://github.com/Cly1st/ECG-Arrhythmia-Classification-using-Artificial-Neural-Network/blob/master/Images/Loss.png)
+![alt text](https://github.com/Cly1st/ECG-Arrhythmia-Classification-using-Artificial-Neural-Network/blob/master/Images/Accuracy.png) |
+![alt text](https://github.com/Cly1st/ECG-Arrhythmia-Classification-using-Artificial-Neural-Network/blob/master/Images/Losses.png)
 
 # 💌Achknowledgement
 
