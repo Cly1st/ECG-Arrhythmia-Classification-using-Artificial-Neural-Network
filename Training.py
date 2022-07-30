@@ -66,14 +66,17 @@ def Load_Testing(File):
 def ANN(input_shape=None):
 	if input_shape is None:
 		raise ("Input shape size for traning!")
+		return
 	model = Sequential()
-	model.add(layers.Dense(128, activation='relu', input_shape=(input_shape)))
+	#model.add(layers.Dense(128, activation='relu', input_shape=(input_shape)))
+	model.add(tf.keras.Input(shape=(128,)))
 	model.add(layers.Dense(128, activation='relu'))
 	model.add(layers.Dense(68, activation='relu'))
 	model.add(layers.Dense(32, activation='relu'))
 	model.add(layers.Dense(16, activation='relu'))
 	model.add(layers.Dense(5, activation='softmax'))
-	model.compile(optimizer='adam', loss='sparse_categorical_crossentropy',
+	opt = tf.keras.optimizers.Adam(learning_rate=0.0005)
+	model.compile(optimizer=opt, loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
 	return model
 
@@ -106,16 +109,16 @@ def main():
 	Path = 'Dataset(Train)'
 	Dataset, Labels = preprocessing(File=Path)
 
-
-	#Train and Validation Dataset Split into 80 | 10
-	X_train, X_validation, y_train, y_validation = train_test_split(Dataset, Labels, test_size=0.2)
+	
+	#Train and Validation Dataset Split into 80 | 20
+	X_train, X_validation, y_train, y_validation = train_test_split(Dataset, Labels, test_size=0.2, shuffle=True, random_state=128)
 	
 	#Early stopping for prevent overfitting
 	earlystop = keras.callbacks.EarlyStopping(monitor='val_loss', min_delta=0.001, patience=20, mode='min', restore_best_weights=True)
 	
 	input_shape = X_train.shape
 	batch_size = 128
-	epoch = 150
+	epoch = 100
 
 	#Model
 	model = ANN(input_shape=input_shape)
@@ -131,15 +134,18 @@ def main():
 		path = 'Dataset(Test)'
 		Data, Label = preprocessing(File=path)
 		loss, acc = model.evaluate(Data, Label)
+
+		print(f"Loss: {loss}")
+		print(f"Accuracy: {acc} %")
 	#Training training dataset
 	else:
-		history = model.fit(X_train, y_train, batch_size = batch_size, epochs=epoch, verbose=1, callbacks=[earlystop],
+
+		history = model.fit(X_train, y_train, batch_size = batch_size, epochs=epoch, verbose=1, callbacks=[earlystop],\
 	 						validation_data=(X_validation, y_validation))
 	
 		plotting(history) #Plot loss and accuracy of training
 
-		model.save('AnnWeight.h5') #Save training weight
-
+		model.save('AnnWeight.h5') #Save training weight'''
 
 if __name__ == '__main__':
 	main()
